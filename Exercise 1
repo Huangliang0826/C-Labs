@@ -1,0 +1,24 @@
+Max and Min of a List
+
+Input: An array of integers A, of length n.
+Output: The maximum and the minimum elements of the list.
+For your complexity analysis, count the number of comparison operations that are used.
+
+Hint: For the second, more efficient algorithm it is possible to use a "divide-and-conquer" algorithm.
+(Look this up in your course text book or elsewhere). For a list of length one, 
+the maximum and minimum is just the one element (no comparison is needed). For a list of length two,
+one element is the maximum and the other the minimum (even if they are both the same), 
+so this can be established with one comparison only. How could you join together two lists whose minimum and maximum you already know? 
+Try to use these ideas to devise an efficient algorithm.
+
+Algorithm 1.
+Pseudo Code:
+max <- a[0]
+min <- a[1]
+
+for(i = 0;i = n;i++)
+ if A[i] > max
+   max = A[i]
+ else if A[i] < min
+   min = A[i]
+return min and max
